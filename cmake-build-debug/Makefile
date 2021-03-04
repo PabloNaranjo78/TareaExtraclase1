@@ -143,6 +143,87 @@ TareaExtraclase1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/build
 .PHONY : TareaExtraclase1/fast
 
+Collector/Collector.o: Collector/Collector.cpp.o
+
+.PHONY : Collector/Collector.o
+
+# target to build an object file
+Collector/Collector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/Collector/Collector.cpp.o
+.PHONY : Collector/Collector.cpp.o
+
+Collector/Collector.i: Collector/Collector.cpp.i
+
+.PHONY : Collector/Collector.i
+
+# target to preprocess a source file
+Collector/Collector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/Collector/Collector.cpp.i
+.PHONY : Collector/Collector.cpp.i
+
+Collector/Collector.s: Collector/Collector.cpp.s
+
+.PHONY : Collector/Collector.s
+
+# target to generate assembly for a file
+Collector/Collector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/Collector/Collector.cpp.s
+.PHONY : Collector/Collector.cpp.s
+
+List/List.o: List/List.cpp.o
+
+.PHONY : List/List.o
+
+# target to build an object file
+List/List.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/List/List.cpp.o
+.PHONY : List/List.cpp.o
+
+List/List.i: List/List.cpp.i
+
+.PHONY : List/List.i
+
+# target to preprocess a source file
+List/List.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/List/List.cpp.i
+.PHONY : List/List.cpp.i
+
+List/List.s: List/List.cpp.s
+
+.PHONY : List/List.s
+
+# target to generate assembly for a file
+List/List.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/List/List.cpp.s
+.PHONY : List/List.cpp.s
+
+Node/Node.o: Node/Node.cpp.o
+
+.PHONY : Node/Node.o
+
+# target to build an object file
+Node/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/Node/Node.cpp.o
+.PHONY : Node/Node.cpp.o
+
+Node/Node.i: Node/Node.cpp.i
+
+.PHONY : Node/Node.i
+
+# target to preprocess a source file
+Node/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/Node/Node.cpp.i
+.PHONY : Node/Node.cpp.i
+
+Node/Node.s: Node/Node.cpp.s
+
+.PHONY : Node/Node.s
+
+# target to generate assembly for a file
+Node/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1.dir/build.make CMakeFiles/TareaExtraclase1.dir/Node/Node.cpp.s
+.PHONY : Node/Node.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +260,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TareaExtraclase1"
+	@echo "... Collector/Collector.o"
+	@echo "... Collector/Collector.i"
+	@echo "... Collector/Collector.s"
+	@echo "... List/List.o"
+	@echo "... List/List.i"
+	@echo "... List/List.s"
+	@echo "... Node/Node.o"
+	@echo "... Node/Node.i"
+	@echo "... Node/Node.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

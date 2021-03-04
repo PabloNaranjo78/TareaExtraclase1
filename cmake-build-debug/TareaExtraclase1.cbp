@@ -82,6 +82,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/pablo/CLionProjects/TareaExtraclase1/Collector/Collector.cpp">
+			<Option target="TareaExtraclase1"/>
+		</Unit>
+		<Unit filename="/home/pablo/CLionProjects/TareaExtraclase1/Collector/Collector.h">
+			<Option target="TareaExtraclase1"/>
+		</Unit>
+		<Unit filename="/home/pablo/CLionProjects/TareaExtraclase1/List/List.cpp">
+			<Option target="TareaExtraclase1"/>
+		</Unit>
+		<Unit filename="/home/pablo/CLionProjects/TareaExtraclase1/List/List.h">
+			<Option target="TareaExtraclase1"/>
+		</Unit>
+		<Unit filename="/home/pablo/CLionProjects/TareaExtraclase1/Node/Node.cpp">
+			<Option target="TareaExtraclase1"/>
+		</Unit>
+		<Unit filename="/home/pablo/CLionProjects/TareaExtraclase1/Node/Node.h">
+			<Option target="TareaExtraclase1"/>
+		</Unit>
 		<Unit filename="/home/pablo/CLionProjects/TareaExtraclase1/main.cpp">
 			<Option target="TareaExtraclase1"/>
 		</Unit>

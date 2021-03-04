@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/pablo/CLionProjects/TareaExtraclase1/Collector/Collector.cpp" "/home/pablo/CLionProjects/TareaExtraclase1/cmake-build-debug/CMakeFiles/TareaExtraclase1.dir/Collector/Collector.cpp.o"
+  "/home/pablo/CLionProjects/TareaExtraclase1/List/List.cpp" "/home/pablo/CLionProjects/TareaExtraclase1/cmake-build-debug/CMakeFiles/TareaExtraclase1.dir/List/List.cpp.o"
+  "/home/pablo/CLionProjects/TareaExtraclase1/Node/Node.cpp" "/home/pablo/CLionProjects/TareaExtraclase1/cmake-build-debug/CMakeFiles/TareaExtraclase1.dir/Node/Node.cpp.o"
   "/home/pablo/CLionProjects/TareaExtraclase1/main.cpp" "/home/pablo/CLionProjects/TareaExtraclase1/cmake-build-debug/CMakeFiles/TareaExtraclase1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

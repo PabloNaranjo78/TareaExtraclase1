@@ -10,6 +10,7 @@ class List {
     public:
         int prueba();
         void prueba2();
+        void* operator new(std::size_t size,int);
 };
 
 

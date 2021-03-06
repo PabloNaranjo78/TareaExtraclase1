@@ -6,8 +6,17 @@
 #define TAREAEXTRACLASE1_NODE_H
 
 
-class Node {
+#include <iostream>
 
+class Node {
+public:
+    int data;
+    Node* next;
+    Node(int _data);
+    void* operator new (std::size_t);
+    void operator delete(void*);
+    int getData();
+    void setData(int);
 };
 
 

@@ -11,12 +11,13 @@
 class Node {
 public:
     int data;
-    Node* next;
+    Node* nextData = NULL;
     Node(int _data);
     void* operator new (std::size_t);
     void operator delete(void*);
     int getData();
     void setData(int);
+
 };
 
 

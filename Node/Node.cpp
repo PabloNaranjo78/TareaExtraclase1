@@ -3,30 +3,29 @@
 //
 
 #include "Node.h"
-
-
+#include <iostream>
+using namespace std;
 Node::Node(int _data) {
     data = _data;
-    next = NULL;
+    nextData = NULL;
 }
 
 void * Node::operator new(std::size_t size) {
     if (true){
-        printf("Sobrecargando %d",size);
         void * ppp = malloc(size);
+        cout<<"New:"<<ppp<<endl;
         return ppp;
     }
 }
 
-void Node::setData(int _data) {
-    data = _data;
-}
 
 int  Node::getData() {
-    printf(" %d hhhhh",data);
+ //   printf("Data= %d ",data);
     return data;
 }
 
+
 void Node::operator delete(void * ppp) {
+    cout<<"Delete="<<ppp<<endl;
     free(ppp);
 }

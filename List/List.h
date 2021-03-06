@@ -5,12 +5,17 @@
 #ifndef TAREAEXTRACLASE1_LIST_H
 #define TAREAEXTRACLASE1_LIST_H
 #include <iostream>
+#include "../Node/Node.h"
 
 class List {
+    private:
+        Node* node = NULL;
+        int counter = 0;
     public:
-        int prueba();
-        void prueba2();
-        void* operator new(std::size_t size,int);
+        List();
+        void printList();
+        void addData(int data);
+        void deleteLastData();
 };
 
 

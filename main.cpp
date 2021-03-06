@@ -10,6 +10,5 @@ int main() {
     printf("\n o %d ++ \n",a);
     printf("%d",&node);
     delete node;
-
     return 0;
 }

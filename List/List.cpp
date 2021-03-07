@@ -13,7 +13,7 @@ List::List() {
 void List::printList() {
     Node* pointer = node;
     cout<<"Elements: "<<counter<<endl;
-    for (int i = counter;i>=0;i--){
+    for (int i = counter;i>0;i--){
         cout<<pointer<<" ->> "<< "Data:"<<(*pointer).getData()<<" -> "<<endl;
         pointer = (*pointer).nextData;
     }
@@ -23,12 +23,26 @@ void List::printList() {
 void List::addData(int data) {
   counter+=1;
   if (node == NULL){
-      node = new Node(data);
+      node = new(collector) Node(data);
     }
   else{
         Node* temp = node;
-        node = new Node(data);
+        node = new(collector) Node(data);
         (*node).nextData = temp;
     }
+}
+
+void List::deleteLastData() {
+    if (node!= NULL){
+        counter-=1;
+        Node* temp = (*node).nextData;
+        node->collector= collector;
+        delete node;
+        node = temp;
+    }
+}
+
+void List::printPointers() {
+    collector->printCollectorPointers();
 }
 

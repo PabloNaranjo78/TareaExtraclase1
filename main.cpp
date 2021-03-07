@@ -4,11 +4,6 @@
 using namespace std;
 
 int main() {
- //   Node * node = new Node(2);
-   // int a = (*node).getData();
-//    printf("\n o %d ++ \n",a);
-  //  cout<<&*node<<endl;
-    //delete node;
 
     List lista1;
     lista1.addData(2);
@@ -16,6 +11,30 @@ int main() {
     lista1.addData(7);
     lista1.addData(5);
     lista1.printList();
+    lista1.deleteLastData();
+    lista1.deleteLastData();
+    lista1.deleteLastData();
+
+    //lista1.printPointers();
+    lista1.addData(8);
+    lista1.addData(12);
+    lista1.addData(22);
+    lista1.addData(90);
+
+
+
+
+   lista1.printList();
+
+    //lista1.printPointers();
+
+
+
+    //lista1.printPointers();
+
+
+    int a;
+    cin>>a;
 
     return 0;
 }

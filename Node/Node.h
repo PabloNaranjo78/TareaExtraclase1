@@ -7,13 +7,15 @@
 
 
 #include <iostream>
+#include "../Collector/Collector.h"
 
 class Node {
 public:
-    int data;
+    Collector* collector;
+    int data = 0;
     Node* nextData = NULL;
     Node(int _data);
-    void* operator new (std::size_t);
+    void* operator new (std::size_t size,Collector* collector);
     void operator delete(void*);
     int getData();
     void setData(int);

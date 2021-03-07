@@ -10,8 +10,12 @@ Node::Node(int _data) {
     nextData = NULL;
 }
 
-void * Node::operator new(std::size_t size) {
-    if (true){
+void * Node::operator new(std::size_t size,Collector* collector) {
+    if (collector->getCounter() > 0){
+        void * ppp = collector->getPointer();
+        cout<<"New Recycled:"<<ppp<<endl;
+        return ppp;
+    }else{
         void * ppp = malloc(size);
         cout<<"New:"<<ppp<<endl;
         return ppp;
@@ -20,12 +24,12 @@ void * Node::operator new(std::size_t size) {
 
 
 int  Node::getData() {
- //   printf("Data= %d ",data);
     return data;
 }
 
 
 void Node::operator delete(void * ppp) {
-    cout<<"Delete="<<ppp<<endl;
-    free(ppp);
+    cout<<"Saving= "<<ppp<<"--/> "<<(((Node*)ppp)->getData())<<endl;
+    Collector* collector = ((Node*)ppp)->collector;
+    collector->recyclePointer(ppp);
 }

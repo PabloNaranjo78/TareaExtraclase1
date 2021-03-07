@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/pablo/CLionProjects/TareaExtraclase1/List/List.h
+/home/pablo/CLionProjects/TareaExtraclase1/Collector/Collector.cpp
+Collector.h
+/home/pablo/CLionProjects/TareaExtraclase1/Collector/Collector.h
 iostream
 -
 
-/home/pablo/CLionProjects/TareaExtraclase1/Node/Node.h
-iostream
+/home/pablo/CLionProjects/TareaExtraclase1/Collector/Collector.h
+clocale
 -
-
-/home/pablo/CLionProjects/TareaExtraclase1/main.cpp
-iostream
--
-List/List.h
-/home/pablo/CLionProjects/TareaExtraclase1/List/List.h
-Node/Node.h
-/home/pablo/CLionProjects/TareaExtraclase1/Node/Node.h
 

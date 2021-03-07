@@ -5,38 +5,41 @@ using namespace std;
 
 int main() {
 
-    List lista1;
-    lista1.addData(2);
-    lista1.addData(9);
-    lista1.addData(7);
-    lista1.addData(77);
-    lista1.addData(55);
-    lista1.addData(54);
-    lista1.addData(51);
-    lista1.addData(52);
+    int info;
+    bool menu = true;
+    int data;
+    List list;
+    while(menu){
+        cout<<"\nPress\n-->1: to insert new int\n-->2: to insert 'n' number of int \n"
+              "-->3: to print the list\n-->4: delete last element \n-->5: exit"<<endl;
+        cin>>info;
 
-    lista1.printList();
-    lista1.deleteLastData();
-    lista1.deleteLastData();
-    lista1.deleteLastData();
-    lista1.deleteLastData();
-    //lista1.printPointers();
-    lista1.addData(8);
-    lista1.addData(12);
-    lista1.addData(33);
-    lista1.addData(32);
-    lista1.addData(90);
-
-
-
-
-   lista1.printList();
-
-    //lista1.printPointers();
-
-
-
-    //lista1.printPointers();
+        switch (info) {
+            case 1:
+                cout<<"Insert int:\n->";
+                cin>>data;
+                list.addData(data);
+                break;
+            case 2:
+                cout<<"How many elements?"<<endl;
+                int elements;
+                cin>>elements;
+                for (int i = 0; elements>i;i++){
+                    cout<<"->";
+                    cin>>data;
+                    list.addData(data);
+                }
+                break;
+            case 3:
+                list.printList();
+                break;
+            case 4:
+                list.deleteLastData();
+                break;
+            case 5:
+                menu = false;
+        }
+    };
 
 
     return 0;

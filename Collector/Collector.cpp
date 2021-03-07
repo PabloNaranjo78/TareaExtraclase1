@@ -9,7 +9,6 @@ using namespace std;
 void *Collector::getPointer() {
     Recyclebin* temp = recyclebin;
     void* ppp = temp->pointer;
-    cout<<counter<<"Esdddd"<<endl;
     recyclebin = recyclebin->nextPointer;
     counter-=1;
     return ppp;
@@ -32,10 +31,10 @@ void Collector::recyclePointer(void * _pointer) {
 
 void Collector::printCollectorPointers() {
     Recyclebin* temp = recyclebin;
-    void* pointer = (*recyclebin).pointer;
+    void* pointer = ((*recyclebin).pointer);
     cout<<"Pointers:"<<counter<<endl;
     for (int i = counter;i>0;i--){
-        cout<<"->"<<pointer<<endl;
+        cout<<"->"<<temp<<endl;
         temp = (*temp).nextPointer;
     }
 

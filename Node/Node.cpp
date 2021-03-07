@@ -12,13 +12,13 @@ Node::Node(int _data) {
 
 void * Node::operator new(std::size_t size,Collector* collector) {
     if (collector->getCounter() >= 1){
-        void * ppp = collector->getPointer();
-        cout<<"New Recycled:"<<ppp<<endl;
-        return ppp;
+        void * newPointer = collector->getPointer();
+        cout<<"New Recycled:"<<newPointer<<endl;
+        return newPointer;
     }else{
-        void * ppp = malloc(size);
-        cout<<"New:"<<ppp<<endl;
-        return ppp;
+        void * newPointer = malloc(size);
+        cout<<"New:"<<newPointer<<endl;
+        return newPointer;
     }
 }
 

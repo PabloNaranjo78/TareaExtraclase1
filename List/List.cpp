@@ -12,11 +12,12 @@ List::List() {
 
 void List::printList() {
     Node* pointer = node;
-    cout<<"Elements: "<<counter<<endl;
+    cout<<"\nElements: "<<counter<<endl;
     for (int i = counter;i>0;i--){
         cout<<pointer<<" ->> "<< "Data:"<<(*pointer).getData()<<" -> "<<endl;
         pointer = (*pointer).nextData;
     }
+    cout<<"\n"<<endl;
 }
 
 

@@ -19,7 +19,6 @@ public:
     void operator delete(void*);
     int getData();
     void setData(int);
-
 };
 
 

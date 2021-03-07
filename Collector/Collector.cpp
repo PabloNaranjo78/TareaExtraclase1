@@ -7,14 +7,11 @@
 using namespace std;
 
 void *Collector::getPointer() {
-    counter-=1;
     Recyclebin* temp = recyclebin;
     void* ppp = temp->pointer;
-    if(recyclebin->nextPointer == NULL){
-        cout<<"Es nulo el puntero"<<endl;
-        return ppp;
-    }
+    cout<<counter<<"Esdddd"<<endl;
     recyclebin = recyclebin->nextPointer;
+    counter-=1;
     return ppp;
 }
 
@@ -24,9 +21,9 @@ void Collector::recyclePointer(void * _pointer) {
         recyclebin->pointer = _pointer;
     }else{
         counter+=1;
-     //   cout<<recyclebin->pointer<<"------"<<_pointer<<endl;
-        Recyclebin* temp = new Recyclebin;
+        Recyclebin* temp = new Recyclebin();
         temp->pointer = recyclebin->pointer;
+        temp->nextPointer = recyclebin->nextPointer;
         recyclebin->pointer = _pointer;
         recyclebin->nextPointer = temp;
     }

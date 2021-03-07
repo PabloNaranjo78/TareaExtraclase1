@@ -11,7 +11,7 @@ Node::Node(int _data) {
 }
 
 void * Node::operator new(std::size_t size,Collector* collector) {
-    if (collector->getCounter() > 0){
+    if (collector->getCounter() >= 1){
         void * ppp = collector->getPointer();
         cout<<"New Recycled:"<<ppp<<endl;
         return ppp;

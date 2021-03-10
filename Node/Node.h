@@ -9,6 +9,10 @@
 #include <iostream>
 #include "../Collector/Collector.h"
 
+/***
+ * Clase Node, que se encarga de guardar la información de la lista, contiene los métodos new y delete sobrecargados,
+ * así como una instancia de collector para que pueda ser utilizado dentro de estos dos métodos.
+ */
 class Node {
 public:
     Collector* collector;
@@ -18,7 +22,6 @@ public:
     void* operator new (std::size_t size,Collector* collector);
     void operator delete(void*);
     int getData();
-    void setData(int);
 };
 
 

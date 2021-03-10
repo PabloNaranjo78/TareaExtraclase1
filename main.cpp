@@ -3,6 +3,9 @@
 #include "Node/Node.h"
 using namespace std;
 
+/***
+ * Función principal, esta hace un menú en la cual se pueden elegir diferentes opciones numéricas para hace uso de la lista.
+ */
 int main() {
 
     int info;

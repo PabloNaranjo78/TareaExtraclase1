@@ -8,6 +8,9 @@
 #include "../Node/Node.h"
 #include "../Collector/Collector.h"
 
+/***
+ * Clase que lleva control de la lista enlazada creada con elementos de la clase Node.
+ */
 class List {
     private:
         Node* node = NULL;

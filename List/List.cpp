@@ -7,9 +7,15 @@
 #include <iostream>
 using namespace std;
 
+/***
+ * Constructor de la clase List
+ */
 List::List() {
 }
 
+/***
+ * Se utiliza para imprimir los elementos y punteros de la lista enlazada.
+ */
 void List::printList() {
     Node* pointer = node;
     cout<<"\nElements: "<<counter<<endl;
@@ -20,7 +26,10 @@ void List::printList() {
     cout<<"\n"<<endl;
 }
 
-
+/***
+ * Con esta se puede agregar elementos nuevos a la lista, hace llamar al new de Collector para hacer el reutilizado de memoria
+ * @param data el dato de tipo entero que se desea agregar a la lista enlazada.
+ */
 void List::addData(int data) {
   counter+=1;
   if (node == NULL){
@@ -33,6 +42,9 @@ void List::addData(int data) {
     }
 }
 
+/***
+ * Elimina el último elemento agregado a la lista enlazada.
+ */
 void List::deleteLastData() {
     if (node!= NULL){
         counter-=1;
@@ -41,9 +53,5 @@ void List::deleteLastData() {
         delete node;
         node = temp;
     }
-}
-
-void List::printPointers() {
-    collector->printCollectorPointers();
 }
 

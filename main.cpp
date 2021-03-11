@@ -14,7 +14,8 @@ int main() {
     List list;
     while(menu){
         cout<<"\nPress\n-->1: to insert new int\n-->2: to insert 'n' number of int \n"
-              "-->3: to print the list and collector\n-->4: delete last element \n-->5: exit"<<endl;
+              "-->3: to print the list and collector\n-->4: delete last element \n-->5: exit"<<endl<<endl;
+        cout<<"---->";
         cin>>info;
 
         switch (info) {
@@ -24,7 +25,7 @@ int main() {
                 list.addData(data);
                 break;
             case 2:
-                cout<<"How many elements?"<<endl;
+                cout<<"How many elements?"<<endl<<"---->";
                 int elements;
                 cin>>elements;
                 for (int i = 0; elements>i;i++){

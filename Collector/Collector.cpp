@@ -48,3 +48,16 @@ Collector::Collector() {
 int Collector::getCounter() {
     return counter;
 }
+
+/***
+ * Imprime los punteros que se encuentran guardados en el Collector
+ */
+void Collector::printCollectorPointers() {
+    Recyclebin* temp = recyclebin;
+    cout<<"\nPointers:"<<counter<<endl;
+    for (int i = counter;i>0;i--){
+        cout<<"-0->"<<temp->pointer<<endl;
+        temp = temp->nextPointer;
+    }
+    cout<<"\n";
+}

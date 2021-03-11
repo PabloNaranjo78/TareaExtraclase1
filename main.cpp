@@ -14,7 +14,7 @@ int main() {
     List list;
     while(menu){
         cout<<"\nPress\n-->1: to insert new int\n-->2: to insert 'n' number of int \n"
-              "-->3: to print the list\n-->4: delete last element \n-->5: exit"<<endl;
+              "-->3: to print the list and collector\n-->4: delete last element \n-->5: exit"<<endl;
         cin>>info;
 
         switch (info) {
@@ -35,6 +35,7 @@ int main() {
                 break;
             case 3:
                 list.printList();
+                list.printPointers();
                 break;
             case 4:
                 list.deleteLastData();

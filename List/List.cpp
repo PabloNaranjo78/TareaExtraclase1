@@ -23,7 +23,7 @@ void List::printList() {
         cout<<pointer<<" ->> "<< "Data:"<<(*pointer).getData()<<" -> "<<endl;
         pointer = (*pointer).nextData;
     }
-    cout<<"\n"<<endl;
+    cout<<"\n";
 }
 
 /***
@@ -53,5 +53,12 @@ void List::deleteLastData() {
         delete node;
         node = temp;
     }
+}
+
+/***
+ * LLama a la función de imprimir los punteros del collector.
+ */
+void List::printPointers() {
+    collector->printCollectorPointers();
 }
 
